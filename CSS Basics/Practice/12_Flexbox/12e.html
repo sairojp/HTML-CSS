@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <style>
+      .flexcontainer{
+        display: inline-flex;
+        flex-direction: column;
+        padding-left:5px;
+        padding-top:0px;
+        padding-bottom:10px;
+        padding-right:5px;
+        border-style:solid;
+        border-width:1px;
+        border-radius:5px;
+        border-color: gray;
+        justify-content: end;
+        width:250px;
+      }
+      .flex{
+        display: inline-flex;
+      }
+      div{
+        margin-top: 5px;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .buttons{
+        margin-left: auto;
+      }
+      button{
+        background-color: rgb(38, 99, 232);
+        border:none;
+        border-radius: 15px;
+        color:white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexcontainer">
+      <div class="flex">
+        <div>Home</div>
+          <div class="buttons"><button>14</button></div> 
+      </div>
+      <div class="flex">
+        <div>Notifications</div>
+          <div class="buttons"><button>3</button></div>  
+      </div>
+      <div class="flex">
+        <div>Messages</div>
+          <div class="buttons"><button>5</button></div>  
+      </div>
+      
+    </div>
+
+  </body>
+</html>

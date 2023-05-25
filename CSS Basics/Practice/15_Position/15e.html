@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Position 
+    </title>
+    <style>
+      .item{
+        position:relative;
+        display: inline-block;
+      }
+      .jacket{
+        width: 300px;
+        height:300px;
+        object-fit: cover;
+      }
+      .offer{
+        position: absolute;
+        top:5px;
+        right:0;
+        background-color: black;
+        color:white;
+        font-family: Arial;
+        font-size: 14px;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-right:10px;
+        padding-left:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">
+      <img class="jacket" src="jacket.jpeg">
+      <div class="offer">20% OFF</div>
+    </div>
+  </body>
+</html>

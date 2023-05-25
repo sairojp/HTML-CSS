@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .mainflex{
+        display: inline-flex;
+        flex-direction: column;
+        padding-left: 12px;
+        padding-top:8px;
+        padding-bottom:18px;
+        padding-right:12px;
+        row-gap: 15px;
+        box-shadow: 0 0 5px 2px rgba(0,0,0,0.15);
+        
+      }
+      .inbox{
+        font-family: Roboto;
+        font-size: 10px;
+        font-weight: 500;
+        color:gray;    
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+      }
+      .mailstats{
+        display: flex;
+        column-gap: 8px;
+      }
+      .profilepic{
+        align-self: center;
+      }
+      .profile{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius:25px;
+      }
+      .mailrow1{
+        display: flex;
+        justify-content: space-between;
+      }
+      .mailrow1{
+        display: flex;
+      }
+      .mailinfo{
+        font-size: 14px;
+        color:black;
+        font-weight: 600; 
+        font-family: Roboto;
+      }
+      .mailtime{
+        font-family: Roboto;
+        font-size:11px;
+        font-weight: 500;
+      }
+      .mail-title{
+        font-size: 12px;
+        color:black;
+        font-weight: 600; 
+        font-family: Roboto;
+      }
+      .mail-preview{
+        font-size: 11px;
+        font-family: Roboto;
+        padding-right: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="mainflex">
+      <div class="inbox">
+        ALL INBOXES
+      </div>
+      <div class="mailstats">
+        <div class="profilepic">
+          <img class="profile" src="images/itachi.jpg">
+        </div>
+        <div class="inbox">
+          <div class="mailrow1">
+            <div class="mailinfo">Chewy Promotions</div>
+            <div class="mailtime">4:58 PM</div>
+          </div>
+          <div class="mail-title">Biggest sales of the year!</div>
+          <div class="mail-preview">Hey there! We're writing to telll you about our...</div>
+        </div>
+      </div>
+      <div class="mailstats">
+        <div class="profilepic">
+          <img class="profile" src="images/levi.jpg">
+        </div>
+        <div class="inbox">
+          <div class="mailrow1">
+            <div class="mailinfo">Best Buy</div>
+            <div class="mailtime">12:58 PM</div>
+          </div>
+          <div class="mail-title">Your Best Buy eReceipt</div>
+          <div class="mail-preview">Thank you for shopping at Best Buy,here is...</div>
+        </div>
+      </div>
+      <div class="mailstats">
+        <div class="profilepic">
+          <img class="profile" src="images/img.jpg">
+        </div>
+        <div class="inbox">
+          <div class="mailrow1">
+            <div class="mailinfo">Netflix</div>
+            <div class="mailtime">8:00 AM</div>
+          </div>
+          <div class="mail-title">Here's whats coming soon to Netflix</div>
+          <div class="mail-preview">Brand new movies and shows, old favourites...</div>
+        </div>
+      </div>
+      
+    </div>  
+  </body>
+</html>

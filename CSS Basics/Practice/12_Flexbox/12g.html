@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <style>
+      .flexbox{
+        display: inline-flex;
+        flex-direction: column;
+        width:300px;
+      }
+      .flex{
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        column-gap:10px;
+        
+      }
+      .profile{
+        align-self: center;
+      }
+      .profilepic{
+        width:50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 40px;
+        
+      }
+      .pic{
+        align-self: center;
+        margin-left: 5px;
+      }
+      .name{
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .nickname,.popularity{
+        font-family: Arial;
+        font-size: 13px;
+        color:gray;
+      }
+      .follow{
+        align-self: center;
+        margin-left:auto;
+        margin-right:10px;
+      }
+      button{
+        color:white;
+        border:none;
+        border-radius:5px;
+        padding-left: 10px;
+        padding-top:6px;
+        padding-bottom:6px;
+        padding-right:10px;
+        background-color: rgb(80, 128, 232);
+        cursor:pointer;                  
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="flex">
+        <div class="pic">
+          <img class="profilepic" src="images/img.jpg">
+        </div>
+        <div class="profile">
+          <div class="name">Nanakusa</div>
+          <div class="nickname">vampire</div>
+          <div class="popularity">popular</div>
+        </div>
+        <div class="follow">
+          <button>Follow</button>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="pic">
+          <img class="profilepic" src="images/levi.jpg">
+        </div>
+        <div class="profile">
+          <div class="name">Levi</div>
+          <div class="nickname">titan slayer</div>
+          <div class="popularity">popular</div>
+        </div>
+        <div class="follow">
+          <button>Follow</button>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="pic">
+          <img class="profilepic" src="images/itachi.jpg">
+        </div>
+        <div class="profile">
+          <div class="name">Itachi</div>
+          <div class="nickname">uchiha</div>
+          <div class="popularity">popular</div>
+        </div>
+        <div class="follow">
+          <button>Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

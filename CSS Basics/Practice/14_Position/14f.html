@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Double sidebar</title>
+    <style>
+      .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width:75px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(25, 25, 25);
+        align-items:center;
+        row-gap: 5px;
+        padding-top:15px;
+      }
+      .img1,.img2,.img3{
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .sidebar2{
+        position: fixed;
+        top: 0;
+        left: 75px;
+        bottom: 0;
+        width:300px;
+        display: flex;
+        flex-direction: column; 
+        background-color: rgb(35, 35, 35);
+        color: white;
+        font-family: Arial;
+      }
+      .title{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 15px;
+      
+      }
+      .info{
+        font-size: 13px;
+      }
+      .plus{
+        font-size: 20px;
+        color:rgb(130, 128, 128)
+      }
+      .content{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        font-size: 14px;
+        font-family: Arial;
+        margin-top: 10px;
+        color:rgb(130, 128, 128)
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div><img class="img1" src="images\img.jpg"></div>
+      <div><img class="img2" src="images\itachi.jpg"></div>
+      <div><img class="img3" src="images\levi.jpg"></div>
+    </div>
+    <div class="sidebar2">
+      <div class="title">
+        <div class="info">
+          INFO
+        </div>
+        <div class="plus">
+          &#43;
+        </div>
+      </div>
+      <div class="content">
+        <div>&#35; new-videos</div>
+        <div>&#35; updates</div>
+        <div>&#35; faq</div>
+      </div>
+    </div>
+  </body>
+</html>

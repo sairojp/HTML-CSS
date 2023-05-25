@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Request a ride </title>
+        <style>
+            p{
+                font-family: Arial;
+                font-size: 30px;
+                font-weight: medium;
+            }
+            input{
+                display: block;
+                width:280px;
+                margin-bottom:5px;
+                padding-left: 15px;
+                padding-right: 10px;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color: rgb(237, 237, 237);
+                border:none;
+                border-radius:5px;
+            }
+            input:focus{
+                outline:none;
+            }
+            .req{
+                margin-top:20px;
+                margin-right:10px;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:20px;
+                padding-right:20px;
+                border:none;
+                background-color: black;
+                color:white;
+                cursor: pointer;
+            }
+            .schedule{
+                margin-top:20px;
+                margin-right:10px;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:20px;
+                padding-right:20px;
+                border:none;
+                background-color:  rgb(237, 237, 237);
+                color:black;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Request a ride now 
+        </p>
+        <input class="location" input="input" placeholder="Enter pickup location ">
+        <input class="destination" input="input" placeholder="Enter destination">
+        <button class="req">
+            Request now
+        </button>
+        <button class="schedule">
+            Schedule for later
+        </button>
+    </body>
+</html>

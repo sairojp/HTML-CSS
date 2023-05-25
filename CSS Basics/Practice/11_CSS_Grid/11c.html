@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      CSS Grid
+    </title>
+    <style>
+      .maingrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        column-gap: 20px;
+        row-gap: 10px;
+      }
+      .columns{
+        background-color: pink;
+        font-size: 20px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="maingrid">
+      <div class="columns">col1</div>
+      <div class="columns">col2</div>
+      <div class="columns">col3</div>
+      <div class="columns">col4</div>
+      <div class="columns">col5</div>
+      <div class="columns">col6</div>
+      <div class="columns">col7</div>
+      <div class="columns">col8</div>
+    </div>
+  </body>
+</html>

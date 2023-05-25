@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested flexbox</title>
+    <style>
+      .mainflex{
+        display: flex;
+        height:60px;
+      }
+      .flex1{
+        background-color: lightpink;
+        width:100px;
+      }
+      .flex2{
+        background-color: lightblue;
+        width:200px;
+        font-family: Arial;
+      }
+      .row1{
+        display: inline-block;
+      }
+      .row{
+        display: flex;
+        color:white;
+        font-family:Arial; 
+        justify-content: space-between;
+        align-self: center;
+      }
+      .row2{
+        background-color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="mainflex">
+      <div class="flex1"></div>
+      <div class="flex2">
+        <div class="row1">row1</div>
+        <div class="row">
+          <div class="row2">row2</div>
+          <div class="row2">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

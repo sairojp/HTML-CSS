@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic header</title>
+    <style>
+      body{
+        height: 2000px;
+      }
+      
+      .header{
+        display: flex;    
+        justify-content: space-between; 
+        align-items: center;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;   
+      }
+      .pic{
+        display: flex;
+        align-items: center;
+      }
+      .profile{
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius:25px;
+        margin-right: 10px;
+      }
+      .name{
+        font-family: Arial;
+        font-weight: 600;
+      }
+      .addfriend{
+        background-color: rgb(24, 119, 242);
+        color: white;
+        font-weight: bold;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 6px;
+        margin-right: 3px
+              
+      }
+      .message{
+        background-color: rgb(230, 230, 230);
+        background-color: rgb(230, 230, 230);
+        border: none;
+        font-weight: bold;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 6px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="pic">
+        <img class="profile" src="images\itachi.jpg">
+        <div class="name">
+          Itachi 
+        </div>
+      </div>
+      <div class="add">
+        <button class="addfriend">
+          Add Friend
+        </button>
+        <button class="message">
+          Message
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

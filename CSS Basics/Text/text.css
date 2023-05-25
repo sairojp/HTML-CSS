@@ -1,0 +1,41 @@
+p{
+    font-family:Arial;
+    margin-top:0px;
+    margin-bottom:0px;
+    color: #606060;
+    font-size:14px;
+}
+.video-title{
+    color:black;
+    margin-top: 25px;
+    font-size:18px;
+    font-weight: bold;
+    width: 280px;
+    line-height: 24px;
+    margin-bottom:3px;
+}
+.video-stats{
+    margin-top: 0px;
+    margin-bottom:15px;
+}
+.video-author{
+    margin-bottom:15px;
+}
+.video-description{
+    width: 270px;
+    line-height: 22px;  
+    margin-bottom:100px; 
+}
+.Shop{
+    text-align:center;
+    color:white;
+    background-color:#e34140;
+    padding-top: 18px;
+    padding-bottom:18px;
+}
+.shop-link{
+    cursor:pointer;
+}
+.shop-link:hover{
+    text-decoration:underline;
+}

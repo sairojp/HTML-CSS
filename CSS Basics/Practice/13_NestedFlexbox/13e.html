@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .mainflex{
+        display: flex;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:5px;
+        padding-right:5px;
+        margin-top:20px;
+        margin-left:10px;
+        width: 430px;
+      }
+      .profilephoto{
+        margin-left:10px;
+        margin-right:10px;
+      }
+      .profilepic{
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius:25px;
+      }
+      .body{
+        display: flex;
+        flex-direction: column;
+        font-family: Roboto;
+        row-gap: 5px;
+        margin-right: 20px;
+      }
+      .tweet-author{
+        font-size: medium;
+        font-weight: 500;
+        display: flex;
+        column-gap: 4px;
+      }
+      .username{
+        font-weight:400;
+        color: gray;
+        font-size:medium;
+      }
+      .content{
+        font-size: 13px;
+        font-weight: 400;
+        font-size: medium;
+      }
+
+      .video-link{
+        display: flex;
+        flex-direction: row;
+        column-gap: 14px;
+        border-color: rgb(211, 209, 209);
+        border-width: 1px;
+        border-style: solid;
+        border-radius:12px;
+        padding-right:10px;
+        margin-top:5px;
+        margin-bottom: 10px;
+        
+      }
+      .thumbnail{
+        width:130px;
+        height:78px;
+      }
+      .thumb{
+        width: 100px;
+        height: 79px;
+        object-fit: cover;
+        border-radius:12px 0px 0px 12px;
+      }
+      .yt{
+        align-self: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="mainflex">
+      <div class="profilephoto">
+        <img class="profilepic" src="images/itachi.jpg">
+      </div>
+      <div class="body">
+        <div class="tweet-author">
+          <div>sairoj.p</div>
+          <div class="username">@sairoj</div>
+        </div>
+        <div class="content">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="video-link">
+          <div class="thumbnail">
+            <img class="thumb" src="images/gray-color.png">
+          </div>
+          <div class="yt">
+            <div class="youtube-link">
+              <div>youtube.com</div>
+              <div class="video-title">
+                Backend web development - a complete overview (2021)
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
